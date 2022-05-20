@@ -1,0 +1,91 @@
+:root{
+    --cor-primaria: #191d2b;
+    --cor-secundaria: #27ae60;
+    --cor-branca: #f1efef;
+    --cor-preta: #111;
+}
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-secundaria);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    font-family: sans-serif;
+    font-size: 1.1em;
+    transition: all .4 ease-in-out;
+}
+
+.section{
+    padding: 40px 20px;
+    display: block;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    font-family: inherit;
+    display: inline-block;
+    color: inherit;
+}
+
+.main-content .navbar{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    flex-direction: column;
+}
+
+.navbar i{
+    font-size: 15px;
+    color: var(--cor-branca);
+}
+
+.navbar a:hover .fa-solid,
+.navbar a:hover .active{
+    color: var(--cor-branca);
+}
+
+.navbar a:hover,
+.navbar a:hover .active{
+    background-color: var(--cor-secundaria);
+}
+
+.navbar a{
+    margin: 8px 0;
+    height: 35px;
+    width: 35px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+}
+
+/*Aqui começa a estilização da section inicio.*/
+.inicio-content{
+    
+}
+
+/*Aqui Termina a estilização da section inicio*/
