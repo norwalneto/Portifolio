@@ -62,12 +62,12 @@ a{
 }
 
 .navbar a:hover .fa-solid,
-.navbar a:hover .active{
+.navbar a.active .fa-solid{
     color: var(--cor-branca);
 }
 
 .navbar a:hover,
-.navbar a:hover .active{
+.navbar a.active{
     background-color: var(--cor-secundaria);
 }
 
@@ -85,7 +85,34 @@ a{
 
 /*Aqui começa a estilização da section inicio.*/
 .inicio-content{
-    
+    display: flex;
+    align-items: center;
+    justify-content: 100px;
+    gap: 40px;
+}
+
+.inicio-content .left{
+    width: calc(50% - 40px);
+}
+
+.inicio-content .image-shape{
+    position: absolute;
+    height: 500px;
+    width: 200px;
+    padding: 20px 50px;
+    background-color: var(--cor-secundaria);
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+}
+
+.inicio-content .left img{
+   height: 500px;
+   position: relative;
+   padding: 20px 30px;
+   border-radius: 45px;
+}
+
+.inicio-content .right{
+    width: calc(50% - 40px);
 }
 
 /*Aqui Termina a estilização da section inicio*/
